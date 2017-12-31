@@ -7,7 +7,6 @@ ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
 RUN apt-get update \
-
     && apt-get install -y locales curl zip unzip git software-properties-common \
     && locale-gen en_US.UTF-8 \
     && add-apt-repository -y ppa:ondrej/php \
